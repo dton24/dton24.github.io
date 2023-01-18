@@ -185,55 +185,28 @@ img, figure{
 }
 
 @media only screen and (max-width: 480px) {
-  /* Reduce the font-size for headers */
   h1, h3 {
     font-size: 24px;
   }
-  /* Reduce the font-size for paragraphs */
+  
   p {
     font-size: 16px;
   }
-  /* Reduce the font-size for list elements */
+  
   li {
     font-size: 14px;
   }
-  /* Reduce the font-size for navigation links */
+  
   .Nav a {
     font-size: 12px;
   }
+  
+  img{
+    width: 70%;
+    height: 70%;
+  }
 }
-Other things you can do, is to adjust the width of different elements and layout of the website so that it fits the screen size of an iPhone.
 
-Copy code
-/* styles for iPhone */
-@media only screen and (max-width: 480px) {
-  /* Reduce the max-width of sections */
-  section {
-    max-width: 90%;
-  }
-  /* Reduce the size of images */
-  img {
-    max-width: 100%;
-  }
-  /* Change the layout of the page to a single column */
-  .container {
-    flex-direction: column;
-  }
-  @media only screen and (max-width: 480px) {
-  /* Reduce the max-width of sections */
-  section {
-    max-width: 90%;
-  }
-  /* Reduce the size of images */
-  img {
-    max-width: 100%;
-  }
-  /* Change the layout of the page to a single column */
-  .container {
-    flex-direction: column;
-  }
-}
-It is important to note that this is just a basic example and you may need to adjust and tweak the CSS styles as needed to make your website look good on an iPhone.
 
 
 
