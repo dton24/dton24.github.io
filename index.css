@@ -185,8 +185,8 @@ img, figure{
 }
 
 @media only screen and (max-width: 600px) {
-  .title{
-    color:pink;
+  img[src *= "images/SQL_image.jpg"]{
+    float:none;
 }
 }
 
