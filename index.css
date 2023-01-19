@@ -185,11 +185,9 @@ img, figure{
 }
 
 @media only screen and (max-width: 480px) {
-  #college .img{
-    max-width: 10px;
-    height: auto;
-}
-  
+  img{
+    float:none;
+  }
 }
 
 
