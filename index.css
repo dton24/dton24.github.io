@@ -184,9 +184,9 @@ img, figure{
   text-align:center;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
   img[src *= "images/SQL_image.jpg"]{
-    float:none;
+    visibility: hidden;
 }
 }
 
