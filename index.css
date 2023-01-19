@@ -185,26 +185,12 @@ img, figure{
 }
 
 @media only screen and (max-width: 480px) {
-  h1, h3 {
-    font-size: 24px;
-  }
-  
-  p {
-    font-size: 16px;
-  }
-  
-  li {
-    font-size: 14px;
-  }
-  
-  .Nav a {
-    font-size: 12px;
-  }
-  
-  img{
-    width: 70%;
-    height: 70%;
-  }
+  #college .img{
+  position: relative;
+  top: -30px;
+  left: -40px;
+  background-color:#141E30;
+}
 }
 
 
