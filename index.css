@@ -1,23 +1,82 @@
 *{
-  background-color:whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:white;
+  font-weight: bold;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+#name{
+  font-size: 125px;
   color:white;
 }
 
+#introduction{
+  background-image:url("images/tech_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  z-index: 1;
+}
 
-#name{
-  font-size: 86px;
-  background-color:#141E30;
+#name h1 {
+  margin-bottom: 10px;  
 }
 
 section {
-  border: 5px ridge azure;
-  border-radius: 5px;
   padding: 30px;
-  background-color:#141E30;
   max-width:1250px;
   margin:auto;
+}
 
+.adjective{
+  font-size: 36px;
+  line-height:50px;
+  margin-bottom: 10px;
+  text-align: center;
+  opacity: 0.7;
+  color: white;
+}
+
+#aboutme{
+  background-image:url("images/background_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+#interests{
+  background-image:url("images/background_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+#high_school{
+  background-image:url("images/background_3.jpeg");
+}
+
+#college{
+  background-image:url("images/background_3.jpeg");
+}
+
+#skills{
+  background-image:url("images/background_2.png");
+}
+
+#Projects{
+  background-image:url("images/background_3.jpeg");
+}
+
+#certifications{
+  background-image:url("images/background_2.png");
 }
 
 a:hover{
@@ -26,8 +85,8 @@ a:hover{
 
 a {
   text-decoration:none;
-  background-color:#141E30;
 }
+
 .Nav a {
   display: block;
   color: white;
@@ -35,7 +94,7 @@ a {
   float:left;
   padding: 14px 16px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   font-family:'Courier New', Courier, monospace;
 }
 
@@ -44,82 +103,55 @@ a {
 }
 h1,h3{
   text-align:center;
-  background-color:#141E30;
 }
 
-h3 #skills{
-  text-align:left;
-  background-color:#141E30;
-}
 .dylan_pic{
   text-align:center;
-  background-color:#141E30;
 }
 .pics{
   text-align:center;
-  background-color:#141E30;
 }
 
 .title{
   font-size: 32px;
-  background-color:#141E30;
   text-align:center;
 }
 
 p{
   font-size: 22px;
   line-height:2;
-  background-color:#141E30;
 }
 
 #college .img{
   position: relative;
   top: -40px;
   left: -50px;
-  background-color:#141E30;
 }
 
 .img{
   float:right;
   position: relative;
   top: 50px;
-  background-color:#141E30;
 }
 
 #certifications{
   text-align:center;
-  background-color:#141E30;
 }
 
 #caption{
   text-align:center;
   opacity: 0.7;
-  background-color:#141E30;
 }
 
 footer{
   line-height:1;
 }
 
-#adjectives{
-  font-size: 36px;
-  line-height:0.1px;
-  text-align: center;
-  opacity: 0.7;
-  background-color:#141E30;
-}
-
 #name a{
   line-height:0;
-  background-color:#141E30;
-}
-
-ul,li,strong,em{
-  background-color:#141E30;
 }
 
 footer h3, footer a{
-  background-color:whitesmoke;
   color: black;
 }
 
@@ -141,13 +173,17 @@ li {
 
 .list{
   font-size: 22px;
+  margin-bottom: 20px; 
+}
+
+.lists li {
+  margin-bottom: 20px;
 }
 
 #Webdev{
   float:right;
   position:relative;
   top: -160px;
-  background-color:#141E30;
 }
 
 #awsrds{
@@ -155,7 +191,6 @@ li {
   position:relative;
   top: -160px;
   margin-right: 50px;
-  background-color:#141E30;
 }
 
 #mysqlpic{
@@ -163,17 +198,6 @@ li {
   position:relative;
   top: -140px;
   margin-right: 50px;
-  background-color:#141E30;
-}
-
-#certifications .title{
-  float:right;
-  position:relative;
-  right:-275px;
-}
-
-img, figure{
-  background-color:#141E30;
 }
 
 .end{
@@ -184,11 +208,18 @@ img, figure{
   text-align:center;
 }
 
+#tools{
+  text-align:right;
+  position: relative;
+  left: 100px;  /* adjust this value as needed */
+}
+
 @media all and (max-width: 600px) {
   img[src *= "images/SQL_image.jpg"]{
     visibility: hidden;
 }
 }
+
 
 
 
