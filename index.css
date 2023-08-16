@@ -236,5 +236,11 @@ li {
 }
 }
 
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    #introduction {
+        background-position: top center; /* Adjusts the background to be centered and starts from the top */
+    }
+}
 
 
