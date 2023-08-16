@@ -1,25 +1,42 @@
-*{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:white;
-  font-weight: bold;
-}
-
 html{
   scroll-behavior:smooth;
 }
 
+p{
+  text-align: center;
+}
+
 #name{
   font-size: 125px;
-  color:white;
+}
+
+#name a{
+  line-height:0;
+  color: goldenrod;
+}
+
+#dylan{
+  font-size: 88px;
 }
 
 #introduction{
-  background-image:url("images/tech_background.png");
+  background-image: url("images/background.png");
+  background-color: white;
   background-size: cover;
+  width:100%;
+  height: 850px;
+  padding: 20px;
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-attachment: fixed;
   z-index: 1;
+  color:white;
+}
+
+
+h1{
+  font-family: serif;
+  color: black;
 }
 
 #name h1 {
@@ -28,8 +45,13 @@ html{
 
 section {
   padding: 30px;
-  max-width:1250px;
-  margin:auto;
+  max-width: 1200px; /* or whatever maximum width you prefer */
+  margin: 0 auto; /* centers the section if it's less than 100% width */
+  padding: 20px; /* optional: some space around content */
+  background-color: white;
+  border-top-style: solid;
+  border-top-color: gray;
+  border-top-width: 1px;
 }
 
 .adjective{
@@ -38,45 +60,37 @@ section {
   margin-bottom: 10px;
   text-align: center;
   opacity: 0.7;
-  color: white;
+}
+
+#bio{
+  border-top-style: solid;
+  border-top-color: gray;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 
 #aboutme{
-  background-image:url("images/background_1.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-attachment: fixed;
   z-index: 1;
+  border-top-style: solid;
+  border-top-color: gray;
+  border-top-width: 1px;
 }
 
 #interests{
-  background-image:url("images/background_2.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-attachment: fixed;
   z-index: 1;
-}
-
-#high_school{
-  background-image:url("images/background_3.jpeg");
-}
-
-#college{
-  background-image:url("images/background_3.jpeg");
-}
-
-#skills{
-  background-image:url("images/background_2.png");
-}
-
-#Projects{
-  background-image:url("images/background_3.jpeg");
-}
-
-#certifications{
-  background-image:url("images/background_2.png");
+  border-top-style: solid;
+  border-top-color: gray;
+  border-top-width: 1px;
 }
 
 a:hover{
@@ -85,21 +99,23 @@ a:hover{
 
 a {
   text-decoration:none;
+  color: darkgray;
+}
+
+.nav-container {
+  text-align: right;
 }
 
 .Nav a {
   display: block;
-  color: white;
-  text-align: left;
   float:left;
   padding: 14px 16px;
   font-weight: bold;
   font-size: 18px;
-  font-family:'Courier New', Courier, monospace;
 }
 
 .Nav a:hover {
-  background-color:Blue;
+  background-color:gray;
 }
 h1,h3{
   text-align:center;
@@ -128,11 +144,10 @@ p{
   left: -50px;
 }
 
-.img{
-  float:right;
-  position: relative;
-  top: 50px;
+#cpp{
+  text-align: center;
 }
+
 
 #certifications{
   text-align:center;
@@ -147,9 +162,6 @@ footer{
   line-height:1;
 }
 
-#name a{
-  line-height:0;
-}
 
 footer h3, footer a{
   color: black;
@@ -171,34 +183,15 @@ li {
   font-size:18px;
 }
 
-.list{
-  font-size: 22px;
-  margin-bottom: 20px; 
+.list {
+  font-size: 26px;   /* Increase this value as per your preference */
+  line-height: 1.5; /* Adjust this value for the desired spacing between lines */
 }
 
-.lists li {
-  margin-bottom: 20px;
+.list li {
+  margin-bottom: 10px; /* Adjust this value for the desired spacing between list items */
 }
 
-#Webdev{
-  float:right;
-  position:relative;
-  top: -160px;
-}
-
-#awsrds{
-  float:right;
-  position:relative;
-  top: -160px;
-  margin-right: 50px;
-}
-
-#mysqlpic{
-  float:right;
-  position:relative;
-  top: -140px;
-  margin-right: 50px;
-}
 
 .end{
   background-color:whitesmoke;
@@ -208,10 +201,33 @@ li {
   text-align:center;
 }
 
-#tools{
-  text-align:right;
-  position: relative;
-  left: 100px;  /* adjust this value as needed */
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap; /* allows the images to wrap to the next line if the container width is too small */
+  justify-content: space-between; /* space out the images evenly */
+}
+
+.img {
+  flex: 1; /* allows the images to grow and take up equal widths inside the container */
+  margin: 0 10px; /* space between images */
+  max-width: calc(33.33% - 20px); /* optional: limit width of each image to be no more than a third of the container width, accounting for margins */
+}
+
+
+#certifications{ 
+  border-top-style: solid;
+  border-top-color: gray;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  border-bottom-width: 1px;
+}
+
+.list{
+  text-align: center;
+  font-size: 22px;
+  line-height: 65px; 
 }
 
 @media all and (max-width: 600px) {
@@ -219,8 +235,6 @@ li {
     visibility: hidden;
 }
 }
-
-
 
 
 
