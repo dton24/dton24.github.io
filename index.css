@@ -231,23 +231,6 @@ li {
   line-height: 65px; 
 }
 
-.img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.top-images, .bottom-images {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Adjust spacing between top and bottom images as needed */
-}
-
-figure.img {
-    margin: 0 10px; /* Adjust spacing between images as needed */
-}
-
-
 @media all and (max-width: 600px) {
   img[src *= "images/SQL_image.jpg"]{
     visibility: hidden;
