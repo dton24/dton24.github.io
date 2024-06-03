@@ -35,7 +35,7 @@ p{
 
 
 h1{
-  font-family: 'DM Sans';
+  font-family: DM Sans;
   color: black;
 }
 
@@ -138,6 +138,7 @@ h1,h3{
 p{
   font-size: 22px;
   line-height:2;
+  font-family: DM Sans;
 }
 
 #college .img{
