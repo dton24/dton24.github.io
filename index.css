@@ -35,7 +35,7 @@ p{
 
 
 h1{
-  font-family: serif;
+  font-family: 'DM Sans';
   color: black;
 }
 
@@ -120,6 +120,7 @@ a {
 }
 h1,h3{
   text-align:center;
+  font-family: 'DM Sans'
 }
 
 .dylan_pic{
